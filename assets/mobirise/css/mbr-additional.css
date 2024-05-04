@@ -32,30 +32,6 @@ body {
   font-size: 4rem;
   line-height: 1;
 }
-.profile-container {
-  width: 500px; /* Adjusted to your specific size */
-  height: 500px; /* Adjusted to your specific size */
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  border: 10px solid transparent;
-  background: linear-gradient(grey, grey) padding-box, 
-              conic-gradient(#0c0c0c, #000000, #000000, #000000, #000000) border-box;
-  animation: rotateBorder 4s linear infinite;
-}
-
-.profile-container img {
-  width: auto;  /* Changed to auto to maintain aspect ratio */
-  height: 150%; /* Slightly increased to ensure no gaps */
-  min-width: 100%; /* Ensures minimum width is fully covered */
-  object-fit: cover;
-  display: block;
-  border-radius: 50%;
-  position: relative; /* Ensures proper positioning */
-  left: 50%;  /* Centers the image horizontally */
-  top: 50%;   /* Centers the image vertically */
-  transform: translate(-50%, -50%); /* Adjust positioning to truly center the image */
-}
 .display-2 > .mbr-iconfont {
   font-size: 5rem;
 }
