@@ -49,7 +49,15 @@
     "versionPublish": "5.9.18",
     "imageResize": true,
     "favicon": "@PROJECT_PATH@/assets/images/140939304-128x128.png",
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "mbrsiteDomain": "9yozusq4sf",
+    "usedWebp": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false
   },
   "pages": {
     "index.html": {
