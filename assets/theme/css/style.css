@@ -966,10 +966,18 @@ blockquote {
   width: 500px;
   height: 500px;
   margin: 20px auto;
-  position: relative; /* Make it a containing block for the pseudo-element */
-  border-radius: 50%; /* Initial round shape */
+  position: relative;
+  border-radius: 50%;
   animation: animate 5s ease-in-out infinite;
-  overflow: hidden; /* Ensure the image stays inside the blob */
+  overflow: hidden;
+}
+
+/* Make the blob responsive on smaller screens */
+@media (max-width: 767px) {
+  .blob {
+      width: 80vw; /* Use 80% of the viewport width on small screens */
+      height: 80vw; /* Maintain aspect ratio */
+  }
 }
 
 .blob::before {
@@ -979,10 +987,10 @@ blockquote {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: inherit; /* Inherits the changing border-radius */
-  border:10px solid rgba(0, 0, 0, 0.6); /* Semi-transparent border */
-  pointer-events: none; /* Ensure the pseudo-element does not block interactions */
-  box-sizing: border-box; /* Ensure the border is sized correctly */
+  border-radius: inherit;
+  border: 8px solid rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+  box-sizing: border-box;
 }
 
 .blob img {
