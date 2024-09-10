@@ -980,7 +980,7 @@ blockquote {
   width: 100%;
   height: 100%;
   border-radius: inherit; /* Inherits the changing border-radius */
-  border: 8px solid rgba(0, 0, 0, 0.5); /* Semi-transparent border */
+  border:10px solid rgba(0, 0, 0, 0.6); /* Semi-transparent border */
   pointer-events: none; /* Ensure the pseudo-element does not block interactions */
   box-sizing: border-box; /* Ensure the border is sized correctly */
 }
