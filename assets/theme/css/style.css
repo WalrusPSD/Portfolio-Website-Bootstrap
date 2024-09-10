@@ -962,4 +962,80 @@ blockquote {
 	padding: 0;
 	top: 0;
 	left: -2400px;
+}.blob {
+  width: 500px;
+  height: 500px;
+  margin: 20px auto;
+  position: relative; /* Make it a containing block for the pseudo-element */
+  border-radius: 50%; /* Initial round shape */
+  animation: animate 5s ease-in-out infinite;
+  overflow: hidden; /* Ensure the image stays inside the blob */
+}
+
+.blob::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit; /* Inherits the changing border-radius */
+  border: 8px solid rgba(0, 0, 0, 0.5); /* Semi-transparent border */
+  pointer-events: none; /* Ensure the pseudo-element does not block interactions */
+  box-sizing: border-box; /* Ensure the border is sized correctly */
+}
+
+.blob img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes animate {
+  0%, 100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+}
+.header1 .container {
+  display: flex;
+  flex-direction: row; /* Aligns items horizontally */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  flex-wrap: wrap; /* Ensures the layout adjusts on smaller screens */
+}
+
+/* Ensure consistent margins and padding */
+.header1 {
+  padding: 100px 50px; /* Padding for top/bottom and left/right */
+}
+
+.blob {
+  margin: 20px auto; /* Center the blob horizontally */
+  display: block;
+}
+
+.text-wrapper {
+  text-align: left; /* Ensures text stays aligned to the left */
+  margin: 20px; /* Add some margin for spacing */
+}
+
+@media (max-width: 767px) {
+  /* Stack elements vertically on smaller screens */
+  .header1 .container {
+      flex-direction: column;
+  }
+  
+  .header1 {
+      padding: 80px 20px;
+  }
+}.navbar-nav .nav-item {
+  margin-left: 10px; /* Reduce spacing between the menu items */
+  margin-right: 10px; /* Reduce spacing between the menu items */
+}
+
+.navbar-brand {
+  margin-right: 20px; /* Adjust the space between the brand and the menu */
 }
