@@ -962,9 +962,12 @@ blockquote {
 	padding: 0;
 	top: 0;
 	left: -2400px;
-}.blob {
-  width: 500px;
-  height: 500px;
+}/* Responsive Blob Styling for Desktop and Mobile */
+.blob {
+  width: 35vw; /* Use 35% of the viewport width on larger screens */
+  height: 35vw; /* Maintain aspect ratio */
+  max-width: 500px; /* Set a maximum width of 500px */
+  max-height: 500px; /* Set a maximum height of 500px */
   margin: 20px auto;
   position: relative;
   border-radius: 50%;
@@ -972,11 +975,13 @@ blockquote {
   overflow: hidden;
 }
 
-/* Make the blob responsive on smaller screens */
+/* Responsive Blob for smaller screens (mobile) */
 @media (max-width: 767px) {
   .blob {
       width: 80vw; /* Use 80% of the viewport width on small screens */
       height: 80vw; /* Maintain aspect ratio */
+      max-width: 500px; /* Still limit to 500px for smaller screens */
+      max-height: 500px;
   }
 }
 
