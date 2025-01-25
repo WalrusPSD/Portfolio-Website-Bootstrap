@@ -1,6 +1,6 @@
 @charset "UTF-8";
 section {
-  background-color: #ffffff;
+  background-color: #f6f7f6;
 }
 
 body {
@@ -37,10 +37,6 @@ button {
   opacity: 1 !important;
 }
 
-.carousel-indicators li {
-  background-color: #edefea !important;
-  border: 2px solid #464845 !important;
-}
 
 .carousel-indicators li:hover,
 .carousel-indicators li:active {
@@ -163,10 +159,6 @@ section .mbr-background-video-preview {
 
 .mbr-black {
   color: #111111;
-}
-
-.mbr-bg-white {
-  background-color: #ffffff;
 }
 
 .mbr-bg-black {
@@ -1051,4 +1043,39 @@ blockquote {
 
 .navbar-brand {
   margin-right: 20px; /* Adjust the space between the brand and the menu */
+}
+
+#features03-1n {
+  background-color: #f6f7f6 !important;
+}
+.item-title.mbr-fonts-style.mt-0.mb-2.display-5,
+.item-title.mbr-fonts-style.mb-2.mt-0.display-5 {
+  text-align: center;
+}
+
+.col-12.col-md-6.col-lg-4 {
+  padding: 15px; /* Adjust the padding value as needed */
+  margin-bottom: 15px; /* Adjust the margin value as needed */
+}
+
+.col-12.col-md-6.col-lg-4 p,
+.col-12.col-md-6.col-lg-4 h3,
+.col-12.col-md-6.col-lg-4 h4,
+.col-12.col-md-6.col-lg-4 .project-title {
+  text-align: center;
+}
+
+.col-12.col-md-6.col-lg-4 .btn {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mbr-section-btn.item-footer {
+  display: flex;
+  justify-content: center;
+}
+
+#features03-1n {
+  padding: 100px 50px;
 }
