@@ -1076,6 +1076,64 @@ blockquote {
   justify-content: center;
 }
 
+/* Project Cards Hover Effect */
+#features03-1n .item-wrapper {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #ffffff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#features03-1n .item-wrapper:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+#features03-1n .item-img {
+  height: 240px;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+
+#features03-1n .item-img img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+#features03-1n .item-wrapper:hover .item-img img {
+  transform: scale(1.05);
+}
+
+#features03-1n .item-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#features03-1n .mbr-section-btn.item-footer {
+  margin-top: auto;
+}
+
+#features03-1n .btn.item-btn {
+  transition: all 0.3s ease;
+}
+
+#features03-1n .btn.item-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure consistent card heights */
+#features03-1n .features-image {
+  display: flex;
+  margin-bottom: 30px;
+}
+
 #features03-1n {
   padding: 100px 50px;
 }
