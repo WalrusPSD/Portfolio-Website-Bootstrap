@@ -1,0 +1,5 @@
+Please add the following placeholder images for the case studies section:
+1. placeholder-case-study-1.jpg
+2. placeholder-case-study-2.jpg
+
+These should be properly sized for your portfolio (suggested dimensions: 800x600px)

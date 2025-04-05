@@ -1109,13 +1109,31 @@ blockquote {
 }
 
 #features03-1n .item-content {
-  padding: 1.5rem;
+  padding: 20px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+#features03-1n .item-content .mbr-text {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#features03-1n .item-content .item-title {
+  text-align: center;
 }
 
 #features03-1n .mbr-section-btn.item-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: auto;
 }
 
@@ -1136,4 +1154,207 @@ blockquote {
 
 #features03-1n {
   padding: 100px 50px;
+}
+
+/* Project Section Styles */
+.technical-projects, .case-studies {
+  margin-bottom: 50px;
+}
+
+.project-category-title {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+#features03-1n .item-wrapper {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #ffffff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+#features03-1n .item-wrapper:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+#features03-1n .item-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#features03-1n .mbr-section-btn.item-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+}
+
+#features03-1n .btn.item-btn {
+  margin: 0.5rem 0.25rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+}
+
+#features03-1n .btn-outline-black {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
+
+#features03-1n .btn-outline-black:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Project tags */
+#features03-1n .project-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 245, 204, 0.9); /* Light yellow that fits aesthetic */
+  color: #000;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 2;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter Tight', sans-serif;
+  transition: all 0.3s ease;
+}
+
+#features03-1n .item-wrapper:hover .project-tag {
+  background-color: rgba(255, 245, 204, 1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+#features03-1n .case-study-tag {
+  background-color: rgba(226, 239, 218, 0.9); /* Light green that fits aesthetic */
+  color: #000;
+}
+
+#features03-1n .item-wrapper:hover .case-study-tag {
+  background-color: rgba(226, 239, 218, 1);
+}
+
+/* Ensure the images have consistent height */
+#features03-1n .item-img {
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#features03-1n .item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Make sure all items in the same row have equal height */
+#features03-1n .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#features03-1n .item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+/* Second row spacing */
+#features03-1n .row.justify-content-center {
+  margin-top: 1.5rem;
+}
+
+/* Ensure case study images have consistent dimensions and appearance */
+#features03-1n .row.justify-content-center .item-img {
+  height: 240px; /* You can adjust this value as needed */
+  overflow: hidden;
+}
+
+#features03-1n .row.justify-content-center .item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+#features03-1n .row.justify-content-center .item-img:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  #features03-1n .item {
+    max-width: 100%;
+  }
+}
+
+/* Form success message styling */
+#form02-e .alert-success {
+  background-color: rgba(226, 239, 218, 0.95);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 24px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  animation: fadeInSuccess 0.6s ease;
+  position: relative;
+  margin-bottom: 25px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.3px;
+}
+
+#form02-e .alert-success::before {
+  content: "✓";
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+@keyframes fadeInSuccess {
+  0% { opacity: 0; transform: translateY(-15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Form success message styling */
+#form02-e .alert-success {
+  background-color: rgba(226, 239, 218, 0.9); /* Light green from case study tags */
+  color: #000;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
